@@ -30,17 +30,18 @@ To write a Python program that sorts a dictionary's:
 ---
 
 ## 🧪Program
-~~~
-my_dict = {2: 56, 1: 2, 5: 12, 4: 24, 6: 18, 3: 323}
+```
+def sort_dict_by_values(d):
+    return sorted(d.items(), key=lambda item: item[1])
+my_dict = {3: 323,2: 56,4: 24, 6: 18,5: 12, 1: 2}
+sorted_items = sort_dict_by_values(my_dict)
+print("Keys and Values sorted in alphabetical order by the value")
+print(sorted_items)
 
-sorted_by_keys = dict(sorted(my_dict.items()))
-sorted_by_values = dict(sorted(my_dict.items(), key=lambda item: item[1]))
-print("Original dictionary:", my_dict)
-print("Dictionary sorted by keys:", sorted_by_keys)
-print("Dictionary sorted by values:", sorted_by_values)
-~~~
+```
+
 ## Sample Output
-<img width="758" height="166" alt="Screenshot 2025-10-20 153400" src="https://github.com/user-attachments/assets/5f01db86-97da-4661-9d15-a7d7603003ce" />
+<img width="1176" height="299" alt="447235140-e432bc44-1ec9-439d-8c4a-0801d6b29c30" src="https://github.com/user-attachments/assets/e4d4ea97-15f5-4a95-85cf-47d5ca42bfba" />
 
 ## Result
-Thus , the program has been executed succesfully.
+Thus the Python program to sort a dictionary is executed successfully.
