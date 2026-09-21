@@ -10,21 +10,17 @@ To write a Python program that merges **two dictionaries** and combines their ke
 3. Call the `merge()` function and print the merged dictionary.
 
 ## 🧾 Program
-~~~
-dict1 = eval(input())
-dict2 = eval(input())
-def merge(d1, d2):
-    merged_dict = {**d1, **d2}
-    return merged_dict
-result = merge(dict1, dict2)
+```
+keys = input()
+values = input()
+keys_list = eval(keys)
+values_list = eval(values)
+result = dict(zip(keys_list, values_list))
 print(result)
-
-
-~~~
+```
 
 ## Output
-<img width="1050" height="251" alt="Screenshot 2025-10-20 152122" src="https://github.com/user-attachments/assets/087d406c-6d4b-47af-a825-e3f03f80f01b" /><img width="676" height="251" alt="Screenshot 2025-10-20 152138" src="https://github.com/user-attachments/assets/a84c5b9d-3998-4ef0-a952-d74b7616770e" />
-
+<img width="1200" height="341" alt="447234400-200b8898-ca1e-4101-a571-650bd5daf6fd" src="https://github.com/user-attachments/assets/44e13d3d-f033-4426-96a2-a93b63d3baf6" />
 
 ## Result
-Thus , the program has been executed succesfully.   
+Thus the python program to convert the input into dictionary is executed successfully.
